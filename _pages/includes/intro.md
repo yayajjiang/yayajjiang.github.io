@@ -13,6 +13,7 @@ inherently captures high-level semantics and abstractions facilitating easy comp
 
 I am also broadly interested in robust decision making, LLM as agents and AI4SCI. 
 
-I am fortunate to have the opportunity to collaborate with [Wufei](https://wufeim.github.io/), [Zhuowan](https://lizw14.github.io/) from JHU, [Ning Yu](https://ningyu1991.github.io/) from Salesforce and [Yuzhi XU](https://scholar.google.com/citations?user=jiUlHrUAAAAJ&hl=zh-CN) from NYU.
+I am fortunate to have the opportunity to collaborate with [Yuzhi XU](https://scholar.google.com/citations?user=jiUlHrUAAAAJ&hl=zh-CN) from NYU.
+<!-- I am fortunate to have the opportunity to collaborate with [Wufei](https://wufeim.github.io/), [Zhuowan](https://lizw14.github.io/) from JHU, [Ning Yu](https://ningyu1991.github.io/) from Salesforce and [Yuzhi XU](https://scholar.google.com/citations?user=jiUlHrUAAAAJ&hl=zh-CN) from NYU. -->
 
 **Contact: yli556 [at] jhu [dot] edu**
