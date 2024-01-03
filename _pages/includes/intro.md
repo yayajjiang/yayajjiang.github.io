@@ -1,0 +1,15 @@
+# Yijiang (William) Li | 黎羿江 @ JHU
+I am a Master's student (M.S.E. in Data Science and Computer Science) at [Johns Hopkins University](https://www.jhu.edu/)(JHU). Prior to that, I received my Bachelor's Degree in Computer Science at South China University of technology, advised by Prof. [Ying Gao](https://www.scholat.com/gaoying26.en).
+
+I am current a research assistant at [Computational Cognition, Vision, and Learning (CCVL) research group](https://ccvl.jhu.edu/), advisde by Prof. [Alan Yuille](https://www.cs.jhu.edu/~ayuille/) at JHU. I also work closely with [Prof. Haohan Wang](https://haohanwang.github.io/) from [UIUC](https://illinois.edu/) at [DREAM Lab](https://dreamlabuiuc.github.io/). Prior to that, I spent one wonderful year as a research intern in [SenseTime Research](https://www.sensetime.com/) and two month at [Webank](https://www.webank.com/) as a Machine Learning Engineer.
+
+My research interest lies in sample efficient, trustworthy and generalizable Machine Learning. I am also interested in Computer Vision, intrigued by various asepcts such as scene understanding, 3D vision models and cogsci-inspired vision. I am current fascnated by the following research questions:
+- Can we use language to scaffold vision learning? The robust vision system humans possess can be partially credited to the human language which
+inherently captures high-level semantics and abstractions facilitating easy compositional reasoning.
+- How to better leverage 3D aware vision model to reason more robustly. Despite most vision models relying on 2D-pixel input, the world is intrinsically 3D. Beyond the use of sophisticated 3-D sensors, akin to human binocular vision, the critical aspect lies in developing a 3D aware structure behind the vision system that can model the real 3D world. 
+
+I am also broadly interested in robust decision making, LLM as agents and AI4SCI. 
+
+I am fortunate to have the opportunity to collaborate with [Wufei](https://wufeim.github.io/), [Zhuowan](https://lizw14.github.io/) from JHU, [Ning Yu](https://ningyu1991.github.io/) from Salesforce and [Yuzhi XU](https://scholar.google.com/citations?user=jiUlHrUAAAAJ&hl=zh-CN) from NYU.
+
+**Contact: yli556 [at] jhu [dot] edu**
