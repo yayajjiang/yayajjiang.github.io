@@ -25,9 +25,3 @@ redirect_from:
 
 {% include_relative includes/miscellaneous.md %}
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_uv">
-  You are the <span id="busuanzi_value_site_uv"></span> th to visit my homepage, welcome!
-</span>
-
-<a href="https://clustrmaps.com/site/1by3o"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=pi_aBfz8hTCBS3WHemYOzgxUrTI0ZhA9NxrqTe8uKw4&cl=ffffff" /></a>
