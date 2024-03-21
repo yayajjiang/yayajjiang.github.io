@@ -10,5 +10,8 @@
 - **[EN 601.482/682 Machine Learning: Deep Learning](https://deep.cs.jhu.edu/deeplearning.html) (Fall 2023)**
   - Course Assistant
   - Instructor: Prof. [Mathias Unberath](https://mathiasunberath.github.io/)
+- **EN.553.436/636 Introduction to Data Science (Spring 2023)**
+  - Teaching Assistant
+  - Instructor: Prof. [Tamás Budavári](https://engineering.jhu.edu/ams/faculty/tamas-budavari/), Prof. [Soledad Villar](https://www.ams.jhu.edu/villar/)
 </div>
 </div>

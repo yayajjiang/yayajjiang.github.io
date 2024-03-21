@@ -8,11 +8,45 @@ My full paper list can be seen at [Google Scholar](https://scholar.google.com/ci
 
 <u>Y. Li</u>, Y. Gao, and H. Wang, “**Understanding adversarial transferability in federated learning**,” arXiv preprint arXiv:2310.00616, 2023.
 
-[Preprint](https://arxiv.org/pdf/2310.00616.pdf)
+[Preprint (TMLR submission)](https://arxiv.org/pdf/2310.00616.pdf)
 
 [Paper](https://arxiv.org/pdf/2310.00616.pdf) | [Arxiv](https://arxiv.org/abs/2310.00616) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:bUvOv5WBHlEJ:scholar.google.com/&output=citation&scisdr=ClG4v9jUEM_EiSJym20:AFWwaeYAAAAAZYh0g20XIWMI9_xhIT4KUHPbkTw&scisig=AFWwaeYAAAAAZYh0g5JAuxYpOKwznqR7dQhV9Jk&scisf=4&ct=citation&cd=-1&hl=zh-CN)
 </div>
 </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/llm_dg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<u>Li Y</u>, Ren S, Deng W, et al. Beyond Finite Data: Towards Data-free Out-of-distribution Generalization via Extrapolation. arXiv preprint arXiv:2403.05523.
+
+[Preprint (ECCV2024 submission)](https://arxiv.org/abs/2403.05523)
+
+[Paper](https://arxiv.org/abs/2403.05523) | [Arxiv](https://arxiv.org/abs/2403.05523) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:wKCaJBEOyo8J:scholar.google.com/&output=citation&scisdr=ClH8_vnCEPaKl1OB9jk:AFWwaeYAAAAAZfyH7jjPvumQwmf91jrpK0FG8E4&scisig=AFWwaeYAAAAAZfyH7n3Bye0BdVGuGtpQRhh3k50&scisf=4&ct=citation&cd=-1&hl=zh-CN)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/robust_dd.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+E. Xue, <u>Y. Li</u>, H. Liu, Y. Shen, and H. Wang, “Towards adversarially robust dataset distillation by curvature regularization,” arXiv preprint arXiv: 2403.10045, 2024.
+
+[Preprint (ECCV2024 submission)](https://arxiv.org/pdf/2403.10045.pdf)
+
+[Paper](https://arxiv.org/pdf/2403.10045.pdf) | [Arxiv](https://arxiv.org/pdf/2403.10045.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:bPocUDsrFBYJ:scholar.google.com/&output=citation&scisdr=ClH8_vnCEPaKl1OOp6c:AFWwaeYAAAAAZfyIv6bfgAZRYuQoYuf6J4UdvEI&scisig=AFWwaeYAAAAAZfyIv4MexAhI6cBf6ePw39RaI3c&scisf=4&ct=citation&cd=-1&hl=zh-CN)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/dd_ot.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+H. Liu, <u>L. Li</u>, T. Xing, V. Dalal, J. He, and H. Wang, “Dataset distillation via the wasserstein metric,” arXiv preprint arXiv: 2311.18531, 2023.
+
+[Preprint (ECCV2024 submission)](https://arxiv.org/pdf/2311.18531.pdf)
+
+[Paper](https://arxiv.org/pdf/2311.18531.pdf) | [Arxiv](https://arxiv.org/pdf/2311.18531.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:EPtoQ3d3T4QJ:scholar.google.com/&output=citation&scisdr=ClH8_vnCEPaKl1OPgIQ:AFWwaeYAAAAAZfyJmIXdUfYrDCKAKD1lcUHIQys&scisig=AFWwaeYAAAAAZfyJmGThJz36iBIxuNEi8oNvbiA&scisf=4&ct=citation&cd=-1&hl=zh-CN)
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2023</div><img src='images/diverse_cotraining.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
