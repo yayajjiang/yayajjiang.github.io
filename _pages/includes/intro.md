@@ -1,10 +1,7 @@
 # Yijiang (William) Li [^1] @ JHU
 
-<span style="color:red; font-size: 125%">**Looking for Ph.D. position Fall 2024!!**</span>
 
-I am a Master's student (M.S.E. in Data Science and Computer Science) at [Johns Hopkins University](https://www.jhu.edu/)(JHU). Prior to that, I received my Bachelor's Degree in Computer Science at South China University of Technology, advised by Prof. [Ying Gao](https://www.scholat.com/gaoying26.en).
-
-I am currently a research assistant at [Computational Cognition, Vision, and Learning (CCVL) research group](https://ccvl.jhu.edu/), advised by Prof. [Alan Yuille](https://www.cs.jhu.edu/~ayuille/) at JHU. I also work closely with [Prof. Haohan Wang](https://haohanwang.github.io/) from [UIUC](https://illinois.edu/) at [DREAM Lab](https://dreamlabuiuc.github.io/). Prior to that, I spent one wonderful year of internship as a researcher in [SenseTime Research](https://www.sensetime.com/) and two months at [Webank](https://www.webank.com/) as a Machine Learning Engineer.
+I am an incoming Ph.D. student at [UC San Diego](https://ucsd.edu/) (UCSD). I obatined my M.S.E. in Computer Science at [Johns Hopkins University](https://www.jhu.edu/)(JHU). Prior to that, I received my Bachelor's Degree in Computer Science at South China University of Technology, advised by Prof. [Ying Gao](https://www.scholat.com/gaoying26.en). I have spent time as a research assistant at [Computational Cognition, Vision, and Learning (CCVL) research group](https://ccvl.jhu.edu/), advised by Prof. [Alan Yuille](https://www.cs.jhu.edu/~ayuille/) and as a intern researcher at [SenseTime Research](https://www.sensetime.com/). I also work closely with [Prof. Haohan Wang](https://haohanwang.github.io/) from [UIUC](https://illinois.edu/) at [DREAM Lab](https://dreamlabuiuc.github.io/).
 
 My research interest lies in sample efficient, trustworthy and generalizable Machine Learning. I am also interested in Computer Vision, intrigued by various aspects such as scene understanding, 3D vision models and cogsci-inspired vision. I am currently fascinated by the following research questions:
 - Can we use language to scaffold vision learning? The robust vision system humans possess can be partially credited to the human language which
