@@ -1,4 +1,4 @@
-# Yijiang (William) Li [^1] @ JHU
+# Yijiang (William) Li [^1] @ UCSD
 
 
 I am an incoming Ph.D. student at [UC San Diego](https://ucsd.edu/) (UCSD). I obatined my M.S.E. in Computer Science at [Johns Hopkins University](https://www.jhu.edu/)(JHU). Prior to that, I received my Bachelor's Degree in Computer Science at South China University of Technology, advised by Prof. [Ying Gao](https://www.scholat.com/gaoying26.en). I have spent time as a research assistant at [Computational Cognition, Vision, and Learning (CCVL) research group](https://ccvl.jhu.edu/), advised by Prof. [Alan Yuille](https://www.cs.jhu.edu/~ayuille/) and as a intern researcher at [SenseTime Research](https://www.sensetime.com/). I also work closely with [Prof. Haohan Wang](https://haohanwang.github.io/) from [UIUC](https://illinois.edu/) at [DREAM Lab](https://dreamlabuiuc.github.io/).
