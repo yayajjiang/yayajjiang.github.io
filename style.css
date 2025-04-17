@@ -262,7 +262,7 @@ h2 {
 }
 /* adjust the thumbnail in pub only */
 .list-item.publication .thumbnail {
-  width: 32%;
+  width: 34%;
   margin-right: 2%;
 }
 
@@ -300,6 +300,11 @@ h3 a:hover {
 .list-item.highlight.description {
   /* reset any margins from other rules */
   margin-bottom: 0.0em;
+  align-items: flex-start;
+}
+
+.list-item.service {
+  align-items: flex-start;
 }
 
 .publication {
@@ -341,7 +346,7 @@ h3 a:hover {
 }
 
 .service p {
-  font-size: 1.0em;
+  font-size: 1.05em;
   line-height: 1.5em;
   color: #a0a8b0;
 }
@@ -363,7 +368,7 @@ h3 a:hover {
 
 .list-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 5px;
 }
 .grey_box {
