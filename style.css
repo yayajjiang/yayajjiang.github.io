@@ -266,6 +266,16 @@ h2 {
   margin-right: 2%;
 }
 
+.list-item.service .thumbnail {
+  width: 36%;
+  margin-right: 2%;
+}
+
+.list-item.edu .thumbnail {
+  width: 30%;
+  margin-right: 2%;
+}
+
 .thumbnail:hover {
   border-bottom: none;
 }
