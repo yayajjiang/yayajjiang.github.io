@@ -155,10 +155,10 @@ h2 {
   border: none;
   background: none;
   color: #a0a8b0;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 2.4em;
   margin-top: 0.5em;
-  margin-right: 1em;
+  margin-right: 0.7em;
   float: left;
   padding: 0;
 }
@@ -326,6 +326,10 @@ h3 a:hover {
 }
 
 .intern {
+  margin-bottom: 0.5em;
+}
+
+.cv {
   margin-bottom: 0.5em;
 }
 
