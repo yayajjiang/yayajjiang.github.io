@@ -441,7 +441,8 @@ h3 a:hover {
 }
 .friend-section {
   max-width: 700px;
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
+  margin: 2rem 0;
   position: relative;
 }
 
@@ -453,7 +454,7 @@ h3 a:hover {
   font-size: 14px;
   display: inline-block;
   margin-bottom: 16px;
-  margin-left: -20px; /* aligns with timeline */
+  margin-left: 0px; /* aligns with timeline */
 }
 
 .friend-timeline {
