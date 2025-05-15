@@ -439,3 +439,87 @@ h3 a:hover {
   position: relative;
   z-index: 1;
 }
+.friend-section {
+  max-width: 700px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.friend-header {
+  background-color: #2d72d9;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-left: -20px; /* aligns with timeline */
+}
+
+.friend-timeline {
+  position: relative;
+  padding-left: 0px;
+  border-left: 2px solid #ccc;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.timeline-left {
+  width: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -31px;
+}
+
+.friend-content {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.domain {
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+.friend-link:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
