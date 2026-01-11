@@ -1,8 +1,14 @@
 // Supabase client
 // This file handles all database operations using Supabase
 
-// Initialize Supabase client
-let supabaseClient = null;
+// 必须依赖 config.js + Supabase SDK
+const supabaseClient = supabase.createClient(
+  BLOG_CONFIG.supabase.url,
+  BLOG_CONFIG.supabase.anonKey
+);
+
+// ✅ 显式挂到全局（关键）
+window.supabaseClient = supabaseClient;
 
 function initSupabase() {
   if (typeof BLOG_CONFIG !== 'undefined' && BLOG_CONFIG.supabase) {
