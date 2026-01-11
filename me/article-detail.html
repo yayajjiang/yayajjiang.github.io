@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>文章详情 - 我的个人空间</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog-style.css">
+  </head>
+
+  <body id="body">
+    <div id="main">
+      <div id="blog-header">
+        <h1><a href="index.html">我的个人空间</a></h1>
+        <nav id="blog-nav">
+          <a href="articles.html" class="nav-link active">文章</a>
+          <a href="links.html" class="nav-link">链接</a>
+          <a href="reading.html" class="nav-link">读书</a>
+          <a href="media.html" class="nav-link">影视</a>
+          <a href="life.html" class="nav-link">日常</a>
+          <a href="projects.html" class="nav-link">个人项目</a>
+          <a href="../index.html" class="nav-link">主页</a>
+        </nav>
+      </div>
+
+      <hr>
+
+      <div id="blog-content">
+        <div class="article-header">
+          <h2 class="article-title" id="article-title">文章标题</h2>
+          <div class="article-meta">
+            <span id="article-date">2026.01.10</span>
+          </div>
+        </div>
+
+        <div class="article-body" id="article-content">
+          <!-- Article content will be loaded here -->
+        </div>
+
+        <!-- Like and Comment Section -->
+        <div class="post-interaction">
+          <div class="like-section">
+            <button class="like-button" id="like-btn" onclick="handleLike()">
+              <span id="like-icon">♡</span>
+              <span id="like-count">0</span> 赞
+            </button>
+          </div>
+
+          <div class="comment-section">
+            <h3>评论 (<span id="comment-count">0</span>)</h3>
+
+            <div class="comment-form">
+              <h4>发表评论</h4>
+              <form id="comment-form" onsubmit="handleCommentSubmit(event)">
+                <input
+                  type="text"
+                  name="displayName"
+                  placeholder="昵称 *"
+                  required
+                >
+                <input
+                  type="text"
+                  name="contact"
+                  placeholder="联系方式 (可选，如邮箱或微信)"
+                >
+                <textarea
+                  name="content"
+                  rows="4"
+                  placeholder="写下你的评论..."
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-primary">提交评论</button>
+              </form>
+            </div>
+
+            <div class="comment-list" id="comment-list">
+              <!-- Comments will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <hr>
+        <p>© 2026</p>
+      </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Blog scripts -->
+    <script src="config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="data-layer.js"></script>
+    <script src="blog.js"></script>
+    <script>
+      // Get article ID from URL parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = urlParams.get('id');
+
+      if (!articleId) {
+        document.getElementById('article-content').innerHTML = '<p>文章未找到</p>';
+      } else {
+        loadArticle(articleId);
+        loadLikesAndComments(articleId);
+      }
+
+      async function loadArticle(id) {
+        // Load article using DataLayer
+        const article = await DataLayer.getPost(id);
+
+        if (article) {
+          document.getElementById('article-title').textContent = article.title;
+          document.getElementById('article-date').textContent = formatDate(article.date);
+          document.getElementById('article-content').innerHTML = parseMarkdown(article.content || article.excerpt);
+        } else {
+          document.getElementById('article-content').innerHTML = '<p>文章未找到</p>';
+        }
+      }
+
+      async function loadLikesAndComments(postId) {
+        // Load likes using DataLayer
+        const { count, liked } = await DataLayer.getLikes(postId);
+        document.getElementById('like-count').textContent = count;
+        const likeBtn = document.getElementById('like-btn');
+        if (liked) {
+          likeBtn.classList.add('liked');
+          document.getElementById('like-icon').textContent = '♥';
+        }
+
+        // Load comments using DataLayer
+        const comments = await DataLayer.getComments(postId);
+        document.getElementById('comment-count').textContent = comments.length;
+
+        const commentList = document.getElementById('comment-list');
+        if (comments.length === 0) {
+          commentList.innerHTML = '<p style="color: #a0a8b0;">暂无评论，快来抢沙发吧！</p>';
+        } else {
+          commentList.innerHTML = comments.map(comment => `
+            <div class="comment-item">
+              <div class="comment-header">
+                <div>
+                  <span class="comment-author">${escapeHtml(comment.display_name)}</span>
+                  ${comment.contact ? `<span class="comment-contact">${escapeHtml(comment.contact)}</span>` : ''}
+                </div>
+                <span class="comment-time">${formatCommentTime(comment.timestamp)}</span>
+              </div>
+              <div class="comment-content">${escapeHtml(comment.content)}</div>
+            </div>
+          `).join('');
+        }
+      }
+
+      async function handleLike() {
+        const result = await DataLayer.toggleLike(articleId);
+        document.getElementById('like-count').textContent = result.likes;
+        const likeBtn = document.getElementById('like-btn');
+        if (result.liked) {
+          likeBtn.classList.add('liked');
+          document.getElementById('like-icon').textContent = '♥';
+        } else {
+          likeBtn.classList.remove('liked');
+          document.getElementById('like-icon').textContent = '♡';
+        }
+      }
+
+      async function handleCommentSubmit(event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        const commentData = {
+          displayName: formData.get('displayName'),
+          contact: formData.get('contact'),
+          content: formData.get('content')
+        };
+
+        await DataLayer.addComment(articleId, commentData);
+        event.target.reset();
+        await loadLikesAndComments(articleId);
+
+        alert('评论提交成功！');
+      }
+
+      function formatCommentTime(timestamp) {
+        const date = new Date(timestamp);
+        const now = new Date();
+        const diff = now - date;
+
+        // Less than 1 hour
+        if (diff < 3600000) {
+          const minutes = Math.floor(diff / 60000);
+          return minutes < 1 ? '刚刚' : `${minutes}分钟前`;
+        }
+
+        // Less than 1 day
+        if (diff < 86400000) {
+          const hours = Math.floor(diff / 3600000);
+          return `${hours}小时前`;
+        }
+
+        // Less than 7 days
+        if (diff < 604800000) {
+          const days = Math.floor(diff / 86400000);
+          return `${days}天前`;
+        }
+
+        // Format as date
+        return formatDate(date.toISOString().split('T')[0]);
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>日常 - 我的个人空间</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog-style.css">
+  </head>
+
+  <body id="body">
+    <div id="main">
+      <div id="blog-header">
+        <h1><a href="index.html">我的个人空间</a></h1>
+        <nav id="blog-nav">
+          <a href="articles.html" class="nav-link">文章</a>
+          <a href="links.html" class="nav-link">链接</a>
+          <a href="reading.html" class="nav-link">读书</a>
+          <a href="media.html" class="nav-link">影视</a>
+          <a href="life.html" class="nav-link active">日常</a>
+          <a href="projects.html" class="nav-link">个人项目</a>
+          <a href="../index.html" class="nav-link">主页</a>
+        </nav>
+      </div>
+
+      <hr>
+
+      <!-- Admin form for adding new life posts -->
+      <div class="admin-form">
+        <h2>添加日常</h2>
+        <form onsubmit="handlePostSubmit(event)">
+          <div class="form-group">
+            <label for="title">标题</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+
+          <div class="form-group">
+            <label for="date">日期 (YYYY-MM-DD)</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="excerpt">简短描述</label>
+            <textarea id="excerpt" name="excerpt" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="content">内容</label>
+            <textarea id="content" name="content" rows="8"></textarea>
+          </div>
+
+          <input type="hidden" name="category" value="life">
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">发布</button>
+            <button type="reset" class="btn btn-secondary">清空</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="blog-content">
+        <h2>生活点滴</h2>
+
+        <div class="post-list">
+          <!-- Example life post -->
+          <div class="post-item">
+            <p class="post-date">2026.01</p>
+            <div class="post-content">
+              <h3>Daily Life Entry</h3>
+              <p class="post-excerpt">Today's thoughts and experiences...</p>
+            </div>
+          </div>
+
+          <!-- Add more life posts here -->
+        </div>
+      </div>
+
+      <div id="footer">
+        <hr>
+        <p>© 2026</p>
+      </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Blog scripts -->
+    <script src="config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="data-layer.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>

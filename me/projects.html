@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>个人项目 - 我的个人空间</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog-style.css">
+  </head>
+
+  <body id="body">
+    <div id="main">
+      <div id="blog-header">
+        <h1><a href="index.html">我的个人空间</a></h1>
+        <nav id="blog-nav">
+          <a href="articles.html" class="nav-link">文章</a>
+          <a href="links.html" class="nav-link">链接</a>
+          <a href="reading.html" class="nav-link">读书</a>
+          <a href="media.html" class="nav-link">影视</a>
+          <a href="life.html" class="nav-link">日常</a>
+          <a href="projects.html" class="nav-link active">个人项目</a>
+          <a href="../index.html" class="nav-link">主页</a>
+        </nav>
+      </div>
+
+      <hr>
+
+      <!-- Admin form for adding new projects -->
+      <div class="admin-form">
+        <h2>添加新项目</h2>
+        <form onsubmit="handlePostSubmit(event)">
+          <div class="form-group">
+            <label for="title">项目名称</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+
+          <div class="form-group">
+            <label for="url">项目链接</label>
+            <input type="text" id="url" name="url" placeholder="https://">
+          </div>
+
+          <div class="form-group">
+            <label for="date">日期 (YYYY-MM-DD)</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="excerpt">项目描述</label>
+            <textarea id="excerpt" name="excerpt" rows="5" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="tech">技术栈</label>
+            <input type="text" id="tech" name="tech" placeholder="e.g., React, Python, Flask">
+          </div>
+
+          <input type="hidden" name="category" value="projects">
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">保存</button>
+            <button type="reset" class="btn btn-secondary">清空</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="blog-content">
+        <h2>个人项目</h2>
+
+        <div class="post-list">
+          <!-- Example project -->
+          <div class="post-item">
+            <p class="post-date">2026.01</p>
+            <div class="post-content">
+              <h3><a href="#">Personal Blog System</a></h3>
+              <p class="post-excerpt">A minimal personal blog with hidden admin forms and localStorage integration. Built with vanilla JavaScript and clean design.</p>
+              <p class="tech-stack"><i>Tech: HTML, CSS, JavaScript, localStorage</i></p>
+            </div>
+          </div>
+
+          <!-- Add more projects here -->
+        </div>
+      </div>
+
+      <div id="footer">
+        <hr>
+        <p>© 2026</p>
+      </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Blog scripts -->
+    <script src="config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="data-layer.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>

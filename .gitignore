@@ -1,0 +1,12 @@
+# Ignore config files with sensitive information
+me/config.js
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log

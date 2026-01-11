@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Yaya's Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog-style.css">
+  </head>
+
+  <body id="body">
+    <div id="main">
+      <div id="blog-header">
+        <h1><a href="index.html">我的个人空间</a></h1>
+        <nav id="blog-nav">
+          <a href="articles.html" class="nav-link">文章</a>
+          <a href="links.html" class="nav-link">链接</a>
+          <a href="reading.html" class="nav-link">读书</a>
+          <a href="media.html" class="nav-link">影视</a>
+          <a href="life.html" class="nav-link">日常</a>
+          <a href="projects.html" class="nav-link">个人项目</a>
+          <a href="../index.html" class="nav-link">主页</a>
+        </nav>
+      </div>
+
+      <hr>
+
+      <div id="blog-content">
+        <h2>最近更新</h2>
+
+        <div class="post-list">
+          <!-- Posts will be displayed here -->
+          <div class="post-item">
+            <p class="post-date">2026.01</p>
+            <div class="post-content">
+              <h3><a href="/me/articles/welcome">Welcome to my blog</a></h3>
+              <p class="post-excerpt">This is my personal blog where I share my thoughts and experiences...</p>
+            </div>
+          </div>
+
+          <!-- Add more posts here -->
+        </div>
+      </div>
+
+      <div id="footer">
+        <hr>
+        <p>© 2026</p>
+      </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Blog scripts -->
+    <script src="config.js"></script>
+    <script src="supabase-client.js"></script>
+    <script src="data-layer.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>
